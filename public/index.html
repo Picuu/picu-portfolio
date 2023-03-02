@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,11 +19,11 @@
         <nav id="nav">
             <ul class="nav--list">
                 <div class="nav--left">
-                    <li class="nav__item"><a href="/home" class="nav__link">HOME</a></li>
-                    <li class="nav__item"><a href="/about" class="nav__link">ABOUT</a></li>
+                    <li class="nav__item"><a href="#top" class="nav__link">HOME</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">ABOUT</a></li>
                 </div>
                 <div class="nav--center">
-                    <li class="nav__item"><a href="/" class="nav__link"><img class="nav__logo" src="./imgs/logo-picu.svg"></a></li>
+                    <li class="nav__item"><a href="#top" class="nav__link"><img class="nav__logo" src="./imgs/logo-picu.svg"></a></li>
                 </div>
                 <div class="nav--right">
                     <li class="nav__item"><a href="/projects" class="nav__link">PROJECTS</a></li>
@@ -35,10 +35,11 @@
 
     <main>
 
-        <section class="home home--container">
-    
+        <section class="home">
+            <div class="home--container">
+
                 <div class="home--left">
-                    <i class='bx bxs-chevron-down home__slide-arrow'></i>
+                    <a href="#about" class="home__slide-arrow"><i class='bx bxs-chevron-down'></i></a>
                 </div>
     
                 <div class="home--right">
@@ -52,13 +53,37 @@
                     <p class="home__biografy">17-year-old developer<br>and student from Spain.</p>
                     <span class="home__title">picu</span>
                 </div>
-    
+
+            </div>
         </section>
 
-        <section class="about about--container">
-            
-            
+        <section class="about" id="about">
+            <div class="about--container section">
+                
+                <div class="section--title--container">
+                    <h1 class="section--title">ABOUT ME</h1>
+                </div>
+                
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed elementum libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed tempus ex quis mi sagittis mollis. Fusce ut justo ullamcorper, lobortis tellus quis, feugiat dolor. Vivamus leo eros, scelerisque in ipsum nec, volutpat dignissim ligula. Suspendisse sit amet ex turpis. Aenean ultricies consequat leo, eu iaculis nulla dignissim vel. Sed eleifend dapibus aliquet. Proin eu congue libero, sit amet molestie nisi. Suspendisse et tincidunt diam. Suspendisse potenti. Aliquam vel lacus ultrices, pharetra dui id, congue metus. Integer vitae dapibus elit.
+                    Phasellus lobortis purus vel orci ultricies, a fringilla arcu egestas. Aenean eu elit nec arcu interdum sagittis. Ut mattis massa id libero ornare, ut feugiat diam semper. Donec sapien massa, consequat egestas tempor at, ultricies et purus. Integer euismod nec mi in pharetra. Cras varius lacus et congue varius. Aliquam vitae vestibulum odio. Fusce faucibus vulputate mi sit amet laoreet. Sed tincidunt laoreet sapien, ac aliquet mi feugiat eu.
+                    Integer quam diam, luctus at pellentesque vel, imperdiet et metus. Mauris rhoncus nec diam eu pulvinar. Vestibulum sit amet rutrum nunc. Nullam fringilla a tellus sit amet fringilla. Aenean quis finibus nunc, condimentum faucibus libero. Mauris pharetra dignissim luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a interdum orci. Etiam nulla dolor, placerat vel vulputate in, consectetur semper tellus. Quisque eu sagittis mi, sed scelerisque libero.
+                </p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed elementum libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed tempus ex quis mi sagittis mollis. Fusce ut justo ullamcorper, lobortis tellus quis, feugiat dolor. Vivamus leo eros, scelerisque in ipsum nec, volutpat dignissim ligula. Suspendisse sit amet ex turpis. Aenean ultricies consequat leo, eu iaculis nulla dignissim vel. Sed eleifend dapibus aliquet. Proin eu congue libero, sit amet molestie nisi. Suspendisse et tincidunt diam. Suspendisse potenti. Aliquam vel lacus ultrices, pharetra dui id, congue metus. Integer vitae dapibus elit.
+                    Phasellus lobortis purus vel orci ultricies, a fringilla arcu egestas. Aenean eu elit nec arcu interdum sagittis. Ut mattis massa id libero ornare, ut feugiat diam semper. Donec sapien massa, consequat egestas tempor at, ultricies et purus. Integer euismod nec mi in pharetra. Cras varius lacus et congue varius. Aliquam vitae vestibulum odio. Fusce faucibus vulputate mi sit amet laoreet. Sed tincidunt laoreet sapien, ac aliquet mi feugiat eu.
+                    Integer quam diam, luctus at pellentesque vel, imperdiet et metus. Mauris rhoncus nec diam eu pulvinar. Vestibulum sit amet rutrum nunc. Nullam fringilla a tellus sit amet fringilla. Aenean quis finibus nunc, condimentum faucibus libero. Mauris pharetra dignissim luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a interdum orci. Etiam nulla dolor, placerat vel vulputate in, consectetur semper tellus. Quisque eu sagittis mi, sed scelerisque libero.
+                </p>
+                <br>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed elementum libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed tempus ex quis mi sagittis mollis. Fusce ut justo ullamcorper, lobortis tellus quis, feugiat dolor. Vivamus leo eros, scelerisque in ipsum nec, volutpat dignissim ligula. Suspendisse sit amet ex turpis. Aenean ultricies consequat leo, eu iaculis nulla dignissim vel. Sed eleifend dapibus aliquet. Proin eu congue libero, sit amet molestie nisi. Suspendisse et tincidunt diam. Suspendisse potenti. Aliquam vel lacus ultrices, pharetra dui id, congue metus. Integer vitae dapibus elit.
+                    Phasellus lobortis purus vel orci ultricies, a fringilla arcu egestas. Aenean eu elit nec arcu interdum sagittis. Ut mattis massa id libero ornare, ut feugiat diam semper. Donec sapien massa, consequat egestas tempor at, ultricies et purus. Integer euismod nec mi in pharetra. Cras varius lacus et congue varius. Aliquam vitae vestibulum odio. Fusce faucibus vulputate mi sit amet laoreet. Sed tincidunt laoreet sapien, ac aliquet mi feugiat eu.
+                    Integer quam diam, luctus at pellentesque vel, imperdiet et metus. Mauris rhoncus nec diam eu pulvinar. Vestibulum sit amet rutrum nunc. Nullam fringilla a tellus sit amet fringilla. Aenean quis finibus nunc, condimentum faucibus libero. Mauris pharetra dignissim luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a interdum orci. Etiam nulla dolor, placerat vel vulputate in, consectetur semper tellus. Quisque eu sagittis mi, sed scelerisque libero.
+                </p>
 
+                <br><br><br><br><br><br><br>
+                
+            </div>
         </section>
 
     </main>

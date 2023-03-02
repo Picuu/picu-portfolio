@@ -6,9 +6,10 @@
 
     --bg-color: #0d0d0e;
     --nav-color: rgba(44, 44, 48, .75);
+    /* hsla(225, 6%, 12%, 0.65) */
 
-    --purple: hsla(274, 80%, 72%, .45);
-    --blue: hsla(235, 80%, 72%, .45);
+    --purple: hsla(274, 80%, 72%, .5);
+    --blue: hsla(235, 80%, 72%, .5);
 }
 
 *, html {
@@ -43,7 +44,7 @@ header {
 
 nav {
     background-color: var(--nav-color);
-    backdrop-filter: blur(.25rem);
+    backdrop-filter: blur(8px);
     filter: drop-shadow(0 .5rem 5rem var(--blue));
     padding: .65rem 3.5rem;
     border-radius: 3.5rem;
@@ -102,9 +103,8 @@ nav {
 
 .home--container {
     display: grid;
-    gap: 1rem;
+    gap: 3rem;
     grid-template-columns: 4.5fr 5fr;
-    width: 100vw;
     height: 100vh;
 }
 
@@ -140,9 +140,10 @@ nav {
 }
 
 .home__slide-arrow {
+    color: var(--text-color);
     font-size: 3rem;
-    margin-bottom: 10vh;
-    margin-right: 3rem;
+    margin-bottom: 9.5vh;
+    margin-right: 2.25rem;
     animation: bounce 2s ease-in-out infinite alternate;
     animation-delay: 1s;
 }
@@ -194,4 +195,38 @@ nav {
     font-size: 13rem;
     font-variation-settings: 'wght' 700.0;
     line-height: 13rem;
+}
+
+.section {
+    margin: 0 22.5%;
+    padding-top: 8.5rem;
+}
+
+.section--title {
+    font-size: 3.5rem;
+    font-variation-settings: 'wght' 600.0;
+    padding-left: 12rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.section--title::before, .section--title::after  {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: hsla(225, 6%, 20%, .5);
+}
+
+.section--title::before {
+    left: 22.5%;
+    width: 11rem;
+    transform: matrix(1, 0, -1, 1, 0, 0);
+}
+
+.section--title::after {
+    right: 22.5%;
+    width: 32rem;
+    transform: matrix(1, 0, 1, 1, 0, 0);
 }
