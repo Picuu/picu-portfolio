@@ -6,7 +6,7 @@
 
     --bg-color: #0d0d0e;
     --nav-color: rgba(44, 44, 48, .75);
-    /* hsla(225, 6%, 12%, 0.65) */
+    --box-color: hsla(225, 6%, 12%, 0.65);
 
     --purple: hsla(274, 80%, 72%, .5);
     --blue: hsla(235, 80%, 72%, .5);
@@ -199,6 +199,7 @@ nav {
 
 .section {
     margin: 0 22.5%;
+    margin-bottom: 4rem;
     padding-top: 8.5rem;
 }
 
@@ -230,3 +231,102 @@ nav {
     width: 32rem;
     transform: matrix(1, 0, 1, 1, 0, 0);
 }
+
+.about--content {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.about__image {
+    width: 288px;
+    border-radius: 4rem;
+}
+
+.skills--content {
+    margin-top: 5rem;
+}
+
+.skills--title {
+    font-size: 2.25rem;
+    font-variation-settings: 'wght' 550.0;
+    padding-right: 12rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.skills--title::before, .skills--title::after  {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: hsla(225, 6%, 20%, .5);
+}
+
+.skills--title::before {
+    left: 22.5%;
+    width: 24.5rem;
+    transform: matrix(1, 0, -1, 1, 0, 0);
+}
+
+.skills--title::after {
+    right: 22.5%;
+    width: 11rem;
+    transform: matrix(1, 0, 1, 1, 0, 0);
+}
+
+.skills--grid {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.skills--grid--box {
+    background-color: var(--box-color);
+    border-radius: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills--grid--title {
+    font-size: 2.5rem;
+    font-variation-settings: 'wght' 600.0;
+    color: rgba(255, 255, 255, .25);
+    padding: 1.5rem;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.skills--grid--box-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+}
+
+.skills--grid--box-content ul {
+    font-size: 4rem;
+    line-height: 3.5rem;
+    padding-bottom: 1.5rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+    margin: auto;
+}
+
+.skills__backend { width: 75%; }
+
+.skills__icon { height: 3.5rem; }
+.bxl-html5 { color: #e44d26 }
+.bxl-css3 { color: #2965f1; }
+.bxl-javascript { color: #f7df1e; }
+

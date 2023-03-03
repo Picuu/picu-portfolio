@@ -1,0 +1,36 @@
+        <div class="footer__bg">
+            <div class="footer__container container">
+                <div>
+                    <h1 class="footer__title">Picu</h1>
+                    <span class="footer__subtitle">Developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a class="footer__link" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="footer__socials">
+                <a class="footer__social" href="https://linkedin.com/in/carloscapo" target="_blank">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
+
+                <a class="footer__social" href="https://picu.es/discord" target="_blank">
+                    <i class='bx bxl-discord-alt'></i>
+                </a>
+
+                <a class="footer__social" href="https://github.com/Picuu" target="_blank">
+                    <i class='bx bxl-github'></i>
+                </a>
+            </div>
+
+            <p class="footer__copy"> © 2022 - 2023 Picu. All rights reserved.</p>
+        </div>
