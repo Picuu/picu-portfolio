@@ -8,6 +8,7 @@ function showHeader() {
 
 window.addEventListener("scroll", showHeader);
 
+
 // SHOW SKILLS FULL BOX
 const skillsBoxs = document.querySelectorAll(".skills--grid--title");
 
@@ -22,3 +23,17 @@ skillsBoxs.forEach((skillsBox) => {
         }
     });
 });
+
+
+// HOVER EFFECT FOR CARDS IN ABOUT SECTION (FORMATION)
+document.getElementById("formation--cards").onmousemove = e => {
+    for(const card of document.getElementsByClassName("formation--card")) {
+        const rect = card.getBoundingClientRect(),
+            x = e.clientX - rect.left,
+            y = e.clientY - rect.top;
+  
+        card.style.setProperty("--mouse-x", `${x}px`);
+        card.style.setProperty("--mouse-y", `${y}px`);
+    };
+}
+

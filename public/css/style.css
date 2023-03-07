@@ -7,6 +7,7 @@
     --bg-color: #0d0d0e;
     --nav-color: rgba(44, 44, 48, .75);
     --box-color: hsla(225, 6%, 12%, 0.65);
+    --card-color: rgb(23, 23, 23);
 
     --purple: hsla(274, 80%, 72%, .5);
     --blue: hsla(235, 80%, 72%, .5);
@@ -238,6 +239,10 @@ nav {
     gap: 4rem;
 }
 
+.about__description {
+    padding-top: .25rem;
+}
+
 .about__image {
     width: 288px;
     border-radius: 4rem;
@@ -307,7 +312,7 @@ nav {
 .skills--grid--box-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s;
+    transition: max-height 0.5s;
 }
 
 .skills--grid--box-content ul {
@@ -330,3 +335,79 @@ nav {
 .bxl-css3 { color: #2965f1; }
 .bxl-javascript { color: #f7df1e; }
 
+
+.formation--content {
+    margin-top: 5rem;
+}
+
+.formation--cards {
+    display: grid;
+    grid-template: 1fr 1fr / repeat(3, 1fr);
+    grid-template-areas:
+    "a b c"
+    "a d e";
+    gap: .75rem;
+}
+
+/* .formation--cards > .card1 { grid-area: a; }
+.formation--cards > .card2 { grid-area: b; }
+.formation--cards > .card3 { grid-area: c; }
+.formation--cards > .card4 { grid-area: d; }
+.formation--cards > .card5 { grid-area: e; }
+.formation--cards > .card6 { grid-area: a; } */
+
+.formation--cards:hover > .formation--card::after {
+    opacity: 1;
+}
+
+.formation--card {
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 10px;
+    cursor: pointer;
+    height: 260px;
+    position: relative;
+    /* width: 300px; */
+}
+
+.formation--card:hover::before {
+    opacity: 1;
+}
+
+.formation--card::before, .formation--card::after {
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .5s;
+    width: 100%;
+}
+
+.formation--card::before {
+    background: radial-gradient(
+        800px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, .06),
+        transparent 40%
+    );
+    z-index: 3;
+}
+
+.formation--card::after {
+    background: radial-gradient(
+        600px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, .3),
+        transparent 35%
+    );
+    z-index: 1;
+}
+
+.formation--card > .formation--card-content {
+    background-color: var(--card-color);
+    border-radius: inherit;
+    inset: 1px;
+    padding: 10px;
+    position: absolute;
+    z-index: 2;
+  }
